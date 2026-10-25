@@ -1,5 +1,3 @@
-// ignore_for_file: avoid_print
-
 import 'dart:async';
 
 import 'package:black_hole_flutter/black_hole_flutter.dart';
@@ -8,7 +6,6 @@ import 'package:flutter/services.dart';
 import 'package:time/time.dart';
 import 'package:timetable/timetable.dart';
 
-// ignore: unused_import
 import 'positioning_demo.dart';
 import 'utils.dart';
 
@@ -27,6 +24,7 @@ class TimetableExample extends StatefulWidget {
 class _TimetableExampleState extends State<TimetableExample>
     with TickerProviderStateMixin {
   var _visibleDateRange = PredefinedVisibleDateRange.week;
+
   void _updateVisibleDateRange(PredefinedVisibleDateRange newValue) {
     setState(() {
       _visibleDateRange = newValue;

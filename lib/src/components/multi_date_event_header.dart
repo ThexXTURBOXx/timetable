@@ -447,7 +447,7 @@ class _EventsLayout extends RenderBox
   Map<int, int> get maxEventRows => _maxEventPositions;
 
   set maxEventRows(Map<int, int> value) {
-    if (_maxEventPositions == value) return;
+    if (const MapEquality<int, int>().equals(_maxEventPositions, value)) return;
 
     _maxEventPositions = value;
     markNeedsLayout();
